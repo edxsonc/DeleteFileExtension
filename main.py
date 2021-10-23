@@ -10,7 +10,7 @@ def main():
         os.chdir(root)
     except FileNotFoundError:
         print("This file does not exist or you have passed in the incorrect format")
-        print('\n Make sure you are using double backslash')
+        print('Make sure you are using double backslash')
     else:
         files_deleted = []
         for root, dirname, file, in os.walk(os.getcwd()):
